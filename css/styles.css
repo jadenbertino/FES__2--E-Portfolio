@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: #242424;
+  text-align: center;
+  line-height: 1.25;
+}
+
+p,
+button {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+
+
+/* RE-USABLES */
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* NAV */
+
+.nav {
+  height: 100px;
+  padding: 16px 0;
+  /* width: 80%;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: #6030b1;
+  font-size: 24px;
+  margin: 0 12px; /* For smaller resolutions */
+  font-weight: 700;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav__link--anchor {
+  /* display: inline; not needed because display flex on parent */
+  margin: 0 12px;
+  font-weight: 700;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav__link--anchor-primary {
+  padding: 8px 20px;
+  border-radius: 50px;
+  background-color: #6030b1;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.nav__link--anchor-primary:hover {
+  background-color: #5d3eff
+}
