@@ -1,9 +1,12 @@
+/* GENERAL */
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 * {
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -15,28 +18,43 @@ h6,
 span {
   color: #242424;
   text-align: center;
-  line-height: 1.25;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
 }
 
 p,
 button {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
-
-
-/* RE-USABLES */
+.text--purple {
+  color: #6030b1;
+}
 
 .container {
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 
+/* .flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+} */
+
 /* NAV */
 
 .nav {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
   height: 100px;
   padding: 16px 0;
   /* width: 80%;
@@ -48,7 +66,7 @@ button {
 
 .nav__logo {
   color: #6030b1;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 0 12px; /* For smaller resolutions */
   font-weight: 700;
 }
@@ -79,4 +97,69 @@ button {
 
 .nav__link--anchor-primary:hover {
   background-color: #5d3eff
+}
+
+
+/* ABOUT  */
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__profile-photo--mask {
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 
+    0 /* horizontal */ 
+    8px /* vertical offset */
+    16px /* blur */
+    rgba(0, 0, 0, 0.2); /* red green blue alpha (alpha=opacity) */
+}
+
+.about__profile-photo {
+  border-radius: 50%;
+  transform: scale(1.25);
+  padding: 4px 0 0 4px;
+}
+
+.about__info--container {
+  max-width: 75%;
+  text-align: center;
+}
+
+.about__info--header {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 16px 0;
+}
+
+.about__links {
+  margin: 24px 0;
+}
+.about__link--wrapper {
+  display: inline;
+  padding: 16px;
+}
+
+.about__link {
+  font-size: 30px;
+  transition: all 250ms ease;
+}
+
+.about__link:hover {
+  color: gray;
+}
+
+.about__image--container {
+  margin-top: 24px;
+  max-width: 600px;
+  width: 70%;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
