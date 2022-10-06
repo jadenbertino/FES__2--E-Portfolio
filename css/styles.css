@@ -184,7 +184,7 @@ button {
   align-items: center;
 }
 
-.languages--wrapper {
+.languages__item {
   position: relative;
   display: flex;
   align-items: center;
@@ -193,26 +193,26 @@ button {
   /* padding: 6% */
 }
 
-.language__image--figure {
+.languages__img--wrapper {
   /* padding: 25px 16px; */
   display: flex;
   justify-content: center;
 }
 
-.language__image {
+.languages__img {
   padding: 25px 16px;
   /* max-width: 200px; */
   width: 80%;
   transition: all 300ms ease;
 }
 
-.languages--wrapper:hover .language__image{
+.languages__item:hover .languages__img {
   filter: brightness(80%);
   opacity: 0.86;
   transform: scale(0.9);
 }
 
-.language__name {
+.languages__name {
   position: absolute;
   bottom: 0;
   transform: scale(0);
@@ -221,7 +221,7 @@ button {
   font-size: 20px;
 }
 
-.languages--wrapper:hover .language__name {
+.languages__item:hover .languages__name {
   transform: scale(1);
   opacity: 1;
 }
