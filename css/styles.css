@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -21,7 +25,7 @@ span {
   line-height: 1.5;
 }
 
-a {
+a, a:visited{
   text-decoration: none;
 }
 
@@ -33,11 +37,11 @@ flex img {
   min-width: 0;
 }
 
-p,
+/* p,
 button {
   line-height: 1.5;
   font-size: 1.25rem;
-}
+} */
 
 .text--purple {
   color: #6030b1;
@@ -149,6 +153,8 @@ button {
 
 .about__info--para {
   max-width: 500px;
+  line-height: 1.5;
+  font-size: 1.25rem;
 }
 
 .about__links {
@@ -325,5 +331,69 @@ button {
 .project__description--link {
   text-align: left;
   color: white;
+}
+
+/* FOOTER  */
+
+footer {
+  background-color: #242424;
+}
+
+.footer__logo--wrapper {
+ position: relative;
+ left: calc(75px/2);
+ padding-right: 75px;
+}
+
+.footer__logo--img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.footer__go-top--link {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  right: 0;
+  top: 50%;
+  font-size: 20px;
+  /* transform: translateY(10%); */
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.footer__logo--wrapper:hover .footer__go-top--link {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+
+
+.footer--container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer__social--link,
+.footer__social--list, 
+.footer__copyright {
+  color: white;
+  font-size: 18px
+  /* margin-top: 24px; */
+}
+
+.footer__social--list {
+  padding: 24px 0;
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-between;
+  align-items: center;
 }
 
