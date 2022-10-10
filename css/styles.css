@@ -272,6 +272,10 @@ button {
 
 /* LANGUAGES */
 
+#languages {
+  padding-top: 24px;
+}
+
 .languages__header {
   font-size: 2.5rem;
   font-weight: 700;
@@ -329,11 +333,12 @@ button {
 }
 
 /* PROJECTS */
-
+#portfolio {
+  padding-top: 60px;
+}
 .portfolio__header {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-top: 15%;
 }
 
 .project {
@@ -532,6 +537,7 @@ footer {
   .languages__list {
     justify-content: center;
   }
+
   .languages__item {
     width: 50%;
   }
