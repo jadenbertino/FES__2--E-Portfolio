@@ -148,7 +148,7 @@ button {
 }
 
 .about__profile-photo--mask {
-  width: 200px;
+  width: 150px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 
@@ -156,6 +156,19 @@ button {
     8px /* vertical offset */
     16px /* blur */
     rgba(0, 0, 0, 0.2); /* red green blue alpha (alpha=opacity) */
+  animation: animate-profile-picutre 900ms 250ms backwards; /* without backwards, the photo is there for a split second */
+}
+
+@keyframes animate-profile-picutre {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .about__profile-photo {
@@ -172,21 +185,54 @@ button {
   align-items: center;
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
 .about__info--header {
   font-size: 3rem;
   font-weight: 900;
   margin: 16px 0;
+  animation: fade-up 1s 400ms backwards;
 }
+
+@keyframes animate-wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.about__info--wave {
+  animation: animate-wave 500ms 5 ease-in-out;
+  display: inline-block; /* span by default is inline, which can't rotate */
+}
+
 
 .about__info--para {
   max-width: 500px;
   line-height: 1.5;
   font-size: 1.25rem;
+  animation: fade-up 1s 600ms backwards;
 }
 
 .about__links {
   margin: 24px 0;
+  animation: fade-up 1s 500ms backwards;
 }
+
 .about__link--wrapper {
   display: inline;
   padding: 16px;
@@ -210,7 +256,18 @@ button {
   flex: 1;
   display: flex;
   align-items: center;
+  animation: fade-in 2s 800ms backwards;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* LANGUAGES */
 
@@ -354,7 +411,12 @@ button {
 .project__description--link {
   margin-right: 8px;
   font-size: 20px;
-  text-decoration: none
+  text-decoration: none;
+  transition: opacity 300ms ease;
+}
+
+.project__description--link:hover {
+  opacity: 0.6;
 }
 
 .project__description--title,

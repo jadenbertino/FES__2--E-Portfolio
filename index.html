@@ -15,8 +15,16 @@
     <nav class="nav" id="nav">
       <h2 class="nav__logo">Jaden Bertino</h2>
       <ul class="nav__list">
-        <li class="nav__link"><a class="nav__link--anchor link__hover-effect" href="#languages">Languages</a></li>
-        <li class="nav__link"><a class="nav__link--anchor link__hover-effect" href="#projects">Projects</a></li>
+        <li class="nav__link">
+          <a class="nav__link--anchor link__hover-effect" href="#languages"
+            >Languages</a
+          >
+        </li>
+        <li class="nav__link">
+          <a class="nav__link--anchor link__hover-effect" href="#projects"
+            >Projects</a
+          >
+        </li>
         <li class="nav__link">
           <a class="nav__link--anchor nav__link--anchor-primary" href="#contact"
             >Contact</a
@@ -31,7 +39,9 @@
         </figure>
         <div class="about__info--container">
           <h2 class="about__info--header">
-            Hey! I'm <span class="text--purple">Jaden Bertino</span> 👋
+            Hey! I'm
+            <span class="text--purple">Jaden Bertino</span
+            >&nbsp;<!-- '&nbsp;' = non breaking space --><span class="about__info--wave">👋</span>
           </h2>
           <p class="about__info--para">
             I'm a <strong class="text--purple">front-end developer</strong> who
@@ -104,17 +114,30 @@
     </section>
     <section id="portfolio">
       <div class="container">
-        <h2 class="portfolio__header">Here are some of my <span class="text--purple">projects</span></h2>
+        <h2 class="portfolio__header">
+          Here are some of my <span class="text--purple">projects</span>
+        </h2>
         <ul class="project__list">
-          <li class="project"> 
+          <li class="project">
             <div class="project__wrapper">
-              <img class="project__img" src="./assets/loopit.png" alt="">
+              <img class="project__img" src="./assets/loopit.png" alt="" />
               <div class="project__description">
                 <h3 class="project__description--title">Car Sales Project</h3>
-                <h4 class="project__description--sub-title">HTML, CSS, JavaScript</h4>
-                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti blanditiis culpa molestiae dolorum eos corporis nam nesciunt ipsa. Quo dolorum alias accusantium, saepe nisi commodi laborum accusamus blanditiis dolor?</p>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  corrupti blanditiis culpa molestiae dolorum eos corporis nam
+                  nesciunt ipsa. Quo dolorum alias accusantium, saepe nisi
+                  commodi laborum accusamus blanditiis dolor?
+                </p>
                 <div>
-                  <a class="project__description--links" href="" target="_blank">
+                  <a
+                    class="project__description--links"
+                    href=""
+                    target="_blank"
+                  >
                     <i class="fab fa-github project__description--link"></i>
                     <i class="fas fa-link project__description--link"></i>
                   </a>
@@ -122,15 +145,26 @@
               </div>
             </div>
           </li>
-          <li class="project"> 
+          <li class="project">
             <div class="project__wrapper">
-              <img class="project__img" src="./assets/loopit.png" alt="">
+              <img class="project__img" src="./assets/loopit.png" alt="" />
               <div class="project__description">
                 <h3 class="project__description--title">Car Sales Project</h3>
-                <h4 class="project__description--sub-title">HTML, CSS, JavaScript</h4>
-                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti blanditiis culpa molestiae dolorum eos corporis nam nesciunt ipsa. Quo dolorum alias accusantium, saepe nisi commodi laborum accusamus blanditiis dolor?</p>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  corrupti blanditiis culpa molestiae dolorum eos corporis nam
+                  nesciunt ipsa. Quo dolorum alias accusantium, saepe nisi
+                  commodi laborum accusamus blanditiis dolor?
+                </p>
                 <div>
-                  <a class="project__description--links" href="" target="_blank">
+                  <a
+                    class="project__description--links"
+                    href=""
+                    target="_blank"
+                  >
                     <i class="fab fa-github project__description--link"></i>
                     <i class="fas fa-link project__description--link"></i>
                   </a>
@@ -138,15 +172,26 @@
               </div>
             </div>
           </li>
-          <li class="project"> 
+          <li class="project">
             <div class="project__wrapper">
-              <img class="project__img" src="./assets/loopit.png" alt="">
+              <img class="project__img" src="./assets/loopit.png" alt="" />
               <div class="project__description">
                 <h3 class="project__description--title">Car Sales Project</h3>
-                <h4 class="project__description--sub-title">HTML, CSS, JavaScript</h4>
-                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti blanditiis culpa molestiae dolorum eos corporis nam nesciunt ipsa. Quo dolorum alias accusantium, saepe nisi commodi laborum accusamus blanditiis dolor?</p>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  corrupti blanditiis culpa molestiae dolorum eos corporis nam
+                  nesciunt ipsa. Quo dolorum alias accusantium, saepe nisi
+                  commodi laborum accusamus blanditiis dolor?
+                </p>
                 <div>
-                  <a class="project__description--links" href="" target="_blank">
+                  <a
+                    class="project__description--links"
+                    href=""
+                    target="_blank"
+                  >
                     <i class="fab fa-github project__description--link"></i>
                     <i class="fas fa-link project__description--link"></i>
                   </a>
@@ -161,33 +206,35 @@
       <div class="container footer--container">
         <a href="#nav" class="footer__logo--wrapper">
           <figure>
-            <img src="./assets/logo.svg" class="footer__logo--img">
+            <img src="./assets/logo.svg" class="footer__logo--img" />
           </figure>
-          <span class="footer__go-top--link">
-            Top ⬆
-          </span>
-        </a>  
+          <span class="footer__go-top--link"> Top ⬆ </span>
+        </a>
         <div class="footer__social--list">
-          <a href="" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-          ">Github</a>
-          <a href="" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-          ">LinkedIn</a>
-          <a href="" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-          ">Email</a>
-          <a href="" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-          ">Resume</a>
+          <a
+            href=""
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Github</a
+          >
+          <a
+            href=""
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >LinkedIn</a
+          >
+          <a
+            href=""
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Email</a
+          >
+          <a
+            href=""
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Resume</a
+          >
         </div>
         <div class="footer__copyright">Copyright © 2022 Jaden Bertino</div>
       </div>
