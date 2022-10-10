@@ -25,7 +25,7 @@ span {
   line-height: 1.35;
 }
 
-a, a:visited{
+a, a:visited {
   text-decoration: none;
   cursor: pointer;
 }
@@ -242,6 +242,7 @@ button {
   font-size: 30px;
   transition: all 250ms ease;
   cursor: pointer;
+  color: #242424;
 }
 
 .about__link:hover {
@@ -416,7 +417,7 @@ button {
 }
 
 .project__description--link:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .project__description--title,
