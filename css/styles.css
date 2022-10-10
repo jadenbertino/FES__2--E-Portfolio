@@ -27,6 +27,7 @@ span {
 
 a, a:visited{
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -195,6 +196,7 @@ button {
 .about__link {
   font-size: 30px;
   transition: all 250ms ease;
+  cursor: pointer;
 }
 
 .about__link:hover {
