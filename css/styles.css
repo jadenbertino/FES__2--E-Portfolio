@@ -90,7 +90,7 @@ button {
   width: 80%;
   margin: 0 auto;
   height: 100px;
-  padding: 16px 0;
+  padding: 16px 20px;
   /* width: 80%;
   margin: 0 auto; */
   display: flex;
@@ -101,7 +101,6 @@ button {
 .nav__logo {
   color: #6030b1;
   font-size: 1.5rem;
-  padding: 0 12px; /* For smaller resolutions */
   font-weight: 700;
 }
 
@@ -112,7 +111,7 @@ button {
   list-style-type: none;
 }
 
-.nav__link--wrapper {
+.nav__link {
   display: flex;
   align-items: center;
 }
@@ -353,7 +352,7 @@ button {
 }
 
 .project__description--link {
-  margin-right: 16px;
+  margin-right: 8px;
   font-size: 20px;
   text-decoration: none
 }
@@ -361,7 +360,7 @@ button {
 .project__description--title,
 .project__description--sub-title,
 .project__description--para,
-.project__description--link {
+.project__description--links {
   text-align: left;
   color: white;
 }
@@ -489,4 +488,48 @@ footer {
     margin: 8px 0;
   }
 
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+  /* Nav */
+  .nav__link:not(:last-child) { /* hides all nav links except contact button */
+    display: none;
+  }
+
+  /* About */
+  .about__info--header, .languages__header, .portfolio__header {
+    font-size: 2rem;
+  }
+  .about__link--wrapper {
+    padding: 8px; 
+  }
+
+  /* .nav__link--anchor {
+    margin: 0 6px;
+  } */
+
+  /* Projects */
+  .project__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .project__description--title {
+    line-height: 1;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .project__description--para {
+    display: none; 
+  }
+  
+  .project__description--sub-title {
+    margin: 8px auto;
+  }
 }
